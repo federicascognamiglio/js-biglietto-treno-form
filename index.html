@@ -30,40 +30,91 @@
     <main class="pt-5">
         <div class="container pt-3">
             <h2 class="text-center" style="color: #12c1f8;">Prenota il tuo Biglietto</h2>
-            <!-- Form -->
-            <form action="" id="ticket-form">
-                <div class="row justify-content-center">
-                    <div class="col-12 col-md-4 mt-3">
-                        <!-- User Name Input -->
-                        <label class="form-label fw-bold" for="username" style="color: #12c1f8;">Nome e
-                            Cognome</label>
-                        <input class="form-control" type="text" id="age" name="age" style="border-color: #12c1f8;">
-                        <!-- /User Name Input -->
-                    </div>
+            <div class="row">
+                <!-- Form -->
+                <div class="col-12">
+                    <form action="" id="ticket-form">
+                        <div class="row justify-content-center">
+                            <!-- User Name Input -->
+                            <div class="col-12 col-md-4 mt-3">
+                                <label class="form-label fw-bold" for="username" style="color: #12c1f8;">Nome e
+                                    Cognome</label>
+                                <input class="form-control" type="text" id="username" name="age"
+                                    style="border-color: #12c1f8;">
+                            </div>
+                            <!-- /User Name Input -->
 
-                    <div class="col-12 col-md-4 mt-3">
-                        <!-- Age Input -->
-                        <label class="form-label fw-bold" for="age" style="color: #12c1f8;">Età</label>
-                        <input class="form-control" type="text" id="age" name="age" style="border-color: #12c1f8;">
-                        <!-- /Age Input -->
-                    </div>
+                            <!-- Age Input -->
+                            <div class="col-12 col-md-4 mt-3">
+                                <label class="form-label fw-bold" for="age" style="color: #12c1f8;">Età</label>
+                                <input class="form-control" type="text" id="age" name="age"
+                                    style="border-color: #12c1f8;">
+                            </div>
+                            <!-- /Age Input -->
 
-                    <div class="col-12 col-md-4 mt-3">
-                        <!-- Km Input -->
-                        <label class="form-label fw-bold" for="km" style="color: #12c1f8;">Km da percorrere</label>
-                        <input class="form-control" type="number" id="km" name="km" style="border-color: #12c1f8;">
-                        <!-- /Km Input -->
-                    </div>
+                            <!-- Km Input -->
+                            <div class="col-12 col-md-4 mt-3">
+                                <label class="form-label fw-bold" for="km" style="color: #12c1f8;">Km da
+                                    percorrere</label>
+                                <input class="form-control" type="number" id="km" name="km"
+                                    style="border-color: #12c1f8;">
+                            </div>
+                            <!-- /Km Input -->
 
-                    <div class="col-12 col-md-4 d-flex justify-content-center column-gap-3 mt-5">
-                        <button class="btn text-white" type="submit" id="submit-btn"
-                            style="background-color: #12c1f8;">Conferma</button>
-                        <button class="btn btn-outline-info" type="submit" id="submit-btn">Annulla</button>
-                    </div>
-
+                            <!-- Buttons -->
+                            <div class="col-12 col-md-4 d-flex justify-content-center column-gap-3 mt-5">
+                                <button class="btn text-white" type="submit" id="submit-btn"
+                                    style="background-color: #12c1f8;">Conferma</button>
+                            </div>
+                            <!-- Buttons -->
+                        </div>
+                    </form>
                 </div>
-            </form>
-            <!-- /Form -->
+                <!-- /Form -->
+
+                <!-- Ticket -->
+                <div class="col-12 mt-5">
+                    <div class="card" style="border-color: #12c1f8;">
+                        <div class="card-header text-white text-center" style="background-color: #12c1f8;">
+                            <h3 class="fs-4">IL TUO BIGLIETTO</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-12 col-md-4">
+                                    <img class="me-4 w-75 text-center" src="./img/photo-output.jpg"
+                                        alt="Codice a barre biglietto treno">
+                                </div>
+                                <div class="col-12 col-md-8 mt-3">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <h3 class="fs-5" style="color: #12c1f8;">NOME PASSEGGERO: </h3>
+                                            <p class="fs-5" id="complete-name" style="color: #12c1f8;"></p>
+                                        </div>
+                                        <div class="col-12 col-md-4 mt-4">
+                                            <h3 class="fs-5" style="color: #12c1f8;">OFFERTA:</h3>
+                                            <p id="offer-type" style="color: #12c1f8;"></p>
+                                        </div>
+                                        <div class="col-12 col-md-4 mt-4">
+                                            <h3 class="fs-5" style="color: #12c1f8;">CARROZZA:</h3>
+                                            <p id="carriage" style="color: #12c1f8;"></p>
+                                        </div>
+                                        <div class="col-12 col-md-4 mt-4">
+                                            <h3 class="fs-5" style="color: #12c1f8;">CODICE CP:</h3>
+                                            <p id="cp-code" style="color: #12c1f8;"></p>
+                                        </div>
+                                        <div class="col-12 mt-4">
+                                            <h3 class="fs-5" style="color: #12c1f8;">COSTO BIGLIETTO:</h3>
+                                            <p id="price" style="color: #12c1f8;"></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Ticket -->
+
+            </div>
         </div>
     </main>
     <!-- /MAIN -->

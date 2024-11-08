@@ -5,26 +5,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biglietto Treno</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
 <body>
-    <main>
-        <!-- Form -->
-        <form action="" id="ticket-form">
-            <!-- Age Input -->
-            <label for="age">Età</label>
-            <input type="text" id="age" name="age">
-            <!-- /Age Input -->
+    <!-- HEADER -->
+    <header style="height: 50px;">
+        <nav class="navbar" style="background-color: #12c1f8;">
+            <div class="container-fluid">
+                <a class="navbar-brand fs-3 fw-bold text-white" href="#">
+                    <img src="./img/vecteezy_vector-illustration-of-train-road-signs_12190931 copy.jpg" class="pe-2"
+                        style="height: 50px;" alt="">
+                    BOOLE-TRAINLINE
+                </a>
+            </div>
+        </nav>
+    </header>
+    <!-- /HEADER -->
 
-            <!-- Km Input -->
-            <label for="km">Chilometri da percorrere</label>
-            <input type="number" id="km" name="km">
-            <!-- /Km Input -->
+    <!-- MAIN -->
+    <main class="pt-5">
+        <div class="container pt-3">
+            <h2 class="text-center" style="color: #12c1f8;">Prenota il tuo Biglietto</h2>
+            <!-- Form -->
+            <form action="" id="ticket-form">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-4 mt-3">
+                        <!-- User Name Input -->
+                        <label class="form-label fw-bold" for="username" style="color: #12c1f8;">Nome e
+                            Cognome</label>
+                        <input class="form-control" type="text" id="age" name="age" style="border-color: #12c1f8;">
+                        <!-- /User Name Input -->
+                    </div>
 
-            <button type="submit" id="submit-btn">Conferma</button>
-        </form>
-        <!-- /Form -->
+                    <div class="col-12 col-md-4 mt-3">
+                        <!-- Age Input -->
+                        <label class="form-label fw-bold" for="age" style="color: #12c1f8;">Età</label>
+                        <input class="form-control" type="text" id="age" name="age" style="border-color: #12c1f8;">
+                        <!-- /Age Input -->
+                    </div>
+
+                    <div class="col-12 col-md-4 mt-3">
+                        <!-- Km Input -->
+                        <label class="form-label fw-bold" for="km" style="color: #12c1f8;">Km da percorrere</label>
+                        <input class="form-control" type="number" id="km" name="km" style="border-color: #12c1f8;">
+                        <!-- /Km Input -->
+                    </div>
+
+                    <div class="col-12 col-md-4 d-flex justify-content-center column-gap-3 mt-5">
+                        <button class="btn text-white" type="submit" id="submit-btn"
+                            style="background-color: #12c1f8;">Conferma</button>
+                        <button class="btn btn-outline-info" type="submit" id="submit-btn">Annulla</button>
+                    </div>
+
+                </div>
+            </form>
+            <!-- /Form -->
+        </div>
     </main>
+    <!-- /MAIN -->
 
     <script src="./js/script.js"></script>
 </body>
